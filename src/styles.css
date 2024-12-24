@@ -1,0 +1,53 @@
+div {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #f9f9f9, #e0f7fa);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+div > div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+img {
+  border: 3px solid #4caf50;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #2e7d32;
+}
+
+div:last-child {
+  margin-top: 10px;
+}
