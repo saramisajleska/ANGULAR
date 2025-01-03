@@ -1,57 +1,61 @@
-div {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  margin: 20px auto;
-  max-width: 400px;
-  padding: 15px;
-  border: 2px solid #ff6f61;
-  border-radius: 15px;
-  background: linear-gradient(to bottom, #ffe4e1, #fff8e7);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+/* Ресетирање на основните стилови */
+* {
+  margin: 0; /* Отстранува надворешни маргини на сите елементи */
+  padding: 0; /* Отстранува внатрешни отстапувања на сите елементи */
+  box-sizing: border-box; /* Ги вклучува границите и падингот во целосната големина на елементите */
 }
 
-div > div:first-child {
-  font-size: 20px;
-  font-weight: 600;
-  color: #d84315;
-  margin-bottom: 12px;
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Променет фонт за поинаков изглед */
+  line-height: 1.5; /* Подобрен простор помеѓу редови */
+  display: flex; /* Центрирање на содржината */
+  justify-content: center; /* Хоризонтално центрирање */
+  align-items: center; /* Вертикално центрирање */
+  min-height: 100vh; /* Минимална висина на цел екран */
+  background: linear-gradient(to bottom, #f0f8ff, #e6f7ff); /* Додадена градиентна позадина */
 }
 
 img {
-  border: 4px solid #ffccbc;
-  border-radius: 15px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0px 4px 10px rgba(255, 204, 188, 0.5);
-}
-
-img:hover {
-  transform: scale(1.15) rotate(3deg);
-  box-shadow: 0px 8px 20px rgba(255, 87, 51, 0.6);
+  max-width: 100%; /* Сликата се прилагодува на ширината на родителскиот елемент */
+  height: auto; /* Пропорционално прилагодување на висината */
+  border-radius: 15px; /* Заоблени рабови на сликата */
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15); /* Слаб ефект на сенка за сликата */
 }
 
 button {
-  margin-top: 15px;
-  padding: 12px 25px;
-  font-size: 16px;
-  background: linear-gradient(to right, #ff7043, #d84315);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none; /* Отстранување на стандардниот контур на копчињата */
+  color: #fff; /* Боја на текстот */
+  background-color: #ff7f50; /* Основна боја на копчето */
+  border: 2px solid #ffa07a; /* Додадена рамка со појака дебелина */
+  padding: 12px 24px; /* Простор внатре во копчето */
+  font-size: 18px; /* Намалена големина на текстот */
+  font-weight: 600; /* Средна тежина на текстот */
+  border-radius: 12px; /* Заоблени рабови на копчето */
+  cursor: pointer; /* Покажувачот станува рака кога ќе се премине преку копчето */
+  transition: all 0.3s ease; /* Плав премин за сите промени */
 }
 
 button:hover {
-  background: linear-gradient(to right, #e64a19, #bf360c);
-  transform: scale(1.1);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #ff6347; /* Промена на бојата кога покажувачот е врз копчето */
 }
 
 button:active {
-  background: #a3350b;
+  transform: translateY(3px); /* Промена на позицијата при кликнување */
 }
 
-div:last-child {
-  margin-top: 12px;
+
+.odd-element {
+  color: darkorange; /* Боја за елементите со непарен број */
 }
 
+.even-element {
+  color: forestgreen; /* Боја за елементите со парен број */
+}
+
+.first-element {
+  color: crimson; /* Боја за првиот елемент */
+}
+
+.last-element {
+  color: royalblue; /* Боја за последниот елемент */
+}
