@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобили - Нови и Половни</title>
+    <link rel="stylesheet" href="strana.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   
+    <header>
+        <div class="logo">Автомобили</div>
+        <nav>
+            <ul>
+                <li><a href="proektna1naslovna.html">Дома</a></li>
+                <li><a href="#login">Најава</a></li>
+                <li><a href="#new-cars">Нови Возила</a></li>
+                <li><a href="#used-cars">Половни Возила</a></li>
+                <li><a href="#reviews">Рецензии</a></li>
+                <li><a href="#test-drive">Тест Возење</a></li>
+                <li><a href="#survey">Анкета</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        
+        <section id="login">
+            <h2>Најава</h2>
+            <form id="login-form">
+                <label for="username">Корисничко име:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Лозинка:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Најава">
+            </form>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <button id="close-popup">Затвори</button>
+                </div>
+            </div>
+            <p id="login-response"></p>
+        </section>
+
+        
+        <section id="new-cars">
+            <h1>Нови Возила</h1>
+            <p>Опис на нови возила:</p>
+            <div class="car-gallery">
+                <div class="car-item">
+                <img src="G-Class.jpg" alt="G-Class" width="200" height="200">
+                <div class="car-description">
+                    <h3>Mercedes G-Class</h3>
+                    <p>Цена: 100,000 EUR</p>
+                    <p><strong>Спецификации:</strong></p>
+                    <ul>
+                        <li>Motor: 4.0L V8 Biturbo</li>
+                        <li>Моќност: 585 HP</li>
+                        <li>0-100 km/h: 4.5 секунди</li>
+                        <li>Пренос: 9-брзински автоматик</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="The brand-new GLE 63 S AMG Coupè 4MATIC+ 4_0-L V8 BITURBO 612 HP 850 Nm 450 kW 0-100 km_h 3.jpg" alt="GLE 63 S AMG" width="200" height="200">
+                <div class="car-description">
+                    <h3>Mercedes GLE 63 S AMG</h3>
+                    <p>Цена: 120,000 EUR</p>
+                    <p><strong>Спецификации:</strong></p>
+                    <ul>
+                        <li>Motor: 4.0L V8 Biturbo</li>
+                        <li>Моќност: 612 HP</li>
+                        <li>0-100 km/h: 3.8 секунди</li>
+                        <li>Пренос: 9-брзински автоматик</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="The brand new SL63 AMG 4MATIC+ 🦈 How do you like it_.jpg" alt="SL63 AMG" width="200" height="200">
+                <div class="car-description">
+                    <h3>Mercedes SL63 AMG</h3>
+                    <p>Цена: 140,000 EUR</p>
+                    <p><strong>Спецификации:</strong></p>
+                    <ul>
+                        <li>Motor: 5.5L V8 Biturbo</li>
+                        <li>Моќност: 577 HP</li>
+                        <li>0-100 km/h: 3.9 секунди</li>
+                        <li>Пренос: 7-брзински автоматик</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="Mercedes Brabus.jpg" alt="Mercedes Brabus" width="200" height="200">
+                <div class="car-description">
+                    <h3>Mercedes Brabus</h3>
+                    <p>Цена: 150,000 EUR</p>
+                    <p><strong>Спецификации:</strong></p>
+                    <ul>
+                        <li>Motor: 6.0L V12 Biturbo</li>
+                        <li>Моќност: 700 HP</li>
+                        <li>0-100 km/h: 3.5 секунди</li>
+                        <li>Пренос: 9-брзински автоматик</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+        <section id="used-cars">
+            <h1>Половни Возила</h1>
+            <p>Опис на половни возила:</p>
+            <div class="car-gallery">
+                <div class="car-item">
+                    <img src="mercedes-benz-a-class-2001-id-77673420-type-main.jpg" alt="Mercedes A-Class 2001" width="200" height="200">
+                    <div class="car-description">
+                        <h3>Mercedes A-Class 2001</h3>
+                        <p>Цена: 6,000 EUR</p>
+                        <p><strong>Спецификации:</strong></p>
+                        <ul>
+                            <li>Motor: 1.4L 4-Cylinder</li>
+                            <li>Моќност: 95 HP</li>
+                            <li>0-100 km/h: 11 секунди</li>
+                            <li>Пренос: 5-брзински мануелен</li>
+                            <li>Година: 2001</li>
+                            <li>Производител: Mercedes-Benz</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="mercedes-benz-e-class-sedan-1997-id-64457842-type-main.jpg" alt="Mercedes E-Class 1997" width="200" height="200">
+                    <div class="car-description">
+                        <h3>Mercedes E-Class Sedan 1997</h3>
+                        <p>Цена: 4,500 EUR</p>
+                        <p><strong>Спецификации:</strong></p>
+                        <ul>
+                            <li>Motor: 2.2L 4-Cylinder Diesel</li>
+                            <li>Моќност: 130 HP</li>
+                            <li>0-100 km/h: 13 секунди</li>
+                            <li>Пренос: 5-брзински мануелен</li>
+                            <li>Година: 1997</li>
+                            <li>Производител: Mercedes-Benz</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="mercedes-benz-c-230-kompressor-sportcoupe-sequentronic-178742_361856_1xl.jpg" alt="Mercedes C-Class 2004" width="200" height="200">
+                    <div class="car-description">
+                        <h3>Mercedes C-Class 2004</h3>
+                        <p>Цена: 8,000 EUR</p>
+                        <p><strong>Спецификации:</strong></p>
+                        <ul>
+                            <li>Motor: 2.3L 4-Cylinder Kompressor</li>
+                            <li>Моќност: 192 HP</li>
+                            <li>0-100 km/h: 7.8 секунди</li>
+                            <li>Пренос: 6-брзински мануелен</li>
+                            <li>Година: 2004</li>
+                            <li>Производител: Mercedes-Benz</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="iStock-500512584.jpg" alt="Mercedes 2012" width="200" height="200">
+                    <div class="car-description">
+                        <h3>Mercedes 2012</h3>
+                        <p>Цена: 18,000 EUR</p>
+                        <p><strong>Спецификации:</strong></p>
+                        <ul>
+                            <li>Motor: 3.5L V6</li>
+                            <li>Моќност: 268 HP</li>
+                            <li>0-100 km/h: 6.5 секунди</li>
+                            <li>Пренос: 7-брзински автоматик</li>
+                            <li>Година: 2012</li>
+                            <li>Производител: Mercedes-Benz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         
+        </section>
+
+       
+        <section id="reviews">
+            <h1>Рецензии</h1>
+            <p>Прочитајте рецензии за новите и половни возила:</p>
+        
+            <!-- Рецензии за Нови Возила -->
+            <div class="reviews-section">
+                <h2>Нови Возила</h2>
+                
+                <div class="car-review">
+                    <h4>Mercedes G-Class 2022</h4>
+                    <p>Извонреден SUV со многу моќ и луксузен дизајн. Комфор и безбедност на највисоко ниво, идеален за долго патување и градски услови. Големиот мотор обезбедува брзина и стабилност. Одлична инвестиција за оние кои бараат најдобро од светот на автомобилите.</p>
+                </div>
+        
+                <div class="car-review">
+                    <h4>Mercedes GLE 63 S AMG</h4>
+                    <p>Ова возило има фантастични перформанси благодарение на неговиот моќен мотор. Врвен луксуз и технологија на највисоко ниво. Идеален за љубителите на спортските SUV автомобили.</p>
+                </div>
+                
+                <div class="car-review">
+                    <h4>Mercedes SL63 AMG</h4>
+                    <p>Еден од најдобрите спортски автомобили, со неверојатна брзина и прецизност. Идеален за возачи кои сакаат да уживаат во секој момент на патувањето. Совршена комбинација на елеганција и моќ.</p>
+                </div>
+        
+                <div class="car-review">
+                    <h4>Mercedes Brabus</h4>
+                    <p>Екстремно модифициран модел со високи перформанси и уникатен дизајн. За оние кои сакаат да имаат нешто уникатно и спортски напредно. Брендот Brabus нуди неверојатни спецификации.</p>
+                </div>
+            </div>
+        
+            <!-- Рецензии за Половни Возила -->
+            <div class="reviews-section">
+                <h2>Половни Возила</h2>
+                
+                <div class="car-review">
+                    <h4>Mercedes A-Class 2001</h4>
+                    <p>Добар автомобил со пристапна цена. Не е толку моќен, но за својата цена нуди солидна економичност и одлична издржливост. Идеален за градски услови и кратки патувања. За љубителите на старите Mercedes модели, ова е одличен избор.</p>
+                </div>
+                
+                <div class="car-review">
+                    <h4>Mercedes E-Class Sedan 1997</h4>
+                    <p>Добар автомобил за возење во град, економичен дизел мотор и долг животен век на моторот. Идеален за возачите кои бараат автомобил за секојдневна употреба без големи инвестиции. Стар модел, но уште релевантен.</p>
+                </div>
+        
+                <div class="car-review">
+                    <h4>Mercedes C-230 Kompressor 2005</h4>
+                    <p>Класичен модел од Mercedes, со добро одржан мотор и стабилни перформанси. Одличен избор за возачите кои сакаат квалитет без да се потрошат премногу. Врвен дизајн и добар за секојдневна употреба.</p>
+                </div>
+        
+                <div class="car-review">
+                    <h4>Mercedes S-Class 2007</h4>
+                    <p>Луксузен автомобил со неверојатен комфор и многу технологија. Овој модел е дизајниран за долг патувања и за оние кои сакаат врвен луксуз. Според перформансите, еден од најдобрите на пазарот.</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="instagram">
+            <h1>Мини Инстаграм</h1>
+            <div class="instagram-gallery">
+                <div class="instagram-post">
+                    <img src="pinterest_ hezzprice.jpg" alt="Instagram пост 1:"  width="200" height="200">
+                    <button class="like-btn">Лајк</button>
+                    <input type="text" placeholder="Коментар..." class="comment-input">
+                    <button class="comment-btn">Коментирај</button>
+                </div>
+                <div class="instagram-post">
+                    <img src="Mercedes-AMG GT Black Series.jpg" alt="Instagram пост 2:" width="200" height="200">
+                    <button class="like-btn">Лајк</button>
+                    <input type="text" placeholder="Коментар..." class="comment-input">
+                    <button class="comment-btn">Коментирај</button>
+                </div>
+                <div class="instagram-post">
+                    <img src="Spotted this beast-looking Mercedes C63S AMG.jpg" alt="Instagram пост 3:" width="200" height="200">
+                    <button class="like-btn">Лајк</button>
+                    <input type="text" placeholder="Коментар..." class="comment-input">
+                    <button class="comment-btn">Коментирај</button>
+                </div>
+                <div class="instagram-post">
+                    <img src="𝗳𝗼𝗹𝗹𝗼𝘄 𝗳𝗼𝗿 𝗺𝗼𝗿𝗲.jpg" alt="Instagram пост 4:" width="200" height="200">
+                    <button class="like-btn">Лајк</button>
+                    <input type="text" placeholder="Коментар..." class="comment-input">
+                    <button class="comment-btn">Коментирај</button>
+                </div>
+            </div>
+            <button id="add-photo">Додади Нова Слика</button>
+            <input type="file" id="photo-input" accept="image/*" style="display: none;">
+        </section>
+
+        
+        <section id="test-drive">
+            <h2>Закажи Тест Возење</h2>
+            <form id="test-drive-form">
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="car-model">Избор на Модел:</label>
+                <select id="car-model" name="car-model">
+                    <option value="new">Нови Возила</option>
+                    <option value="used">Половни Возила</option>
+                </select><br>
+                <label for="test-date">Дата:</label>
+                <input type="date" id="test-date" name="test-date" required><br>
+                <input type="submit" value="Закажи">
+            </form>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <button id="close-popup">Затвори</button>
+                </div>
+            </div>
+            <p id="test-drive-response"></p>
+        </section>
+
+        
+        <section id="survey">
+            <h2>Анкета за импресии</h2>
+            <form id="survey-form">
+                <label for="impressions">Какви се вашите импресии од сајтот?</label><br>
+                <textarea id="impressions" name="impressions" rows="4" cols="50"></textarea><br><br>
+                <label>Оценете го сајтот:</label><br>
+                <input type="radio" id="excellent" name="rating" value="excellent">
+                <label for="excellent">Одлично</label><br>
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Добро</label><br>
+                <input type="radio" id="fair" name="rating" value="fair">
+                <label for="fair">Во ред</label><br>
+                <input type="submit" value="Испрати">
+            </form>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <button id="close-popup">Затвори</button>
+                </div>
+            </div>
+            <p id="survey-response"></p>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; SARA'S MBENZ SHOP - Сите права се задржани.</p>
+        <div>
+            <a href="#instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="jquery.js"></script>
+</body>
+</html>
